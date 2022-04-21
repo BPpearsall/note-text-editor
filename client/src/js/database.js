@@ -12,7 +12,6 @@ const initdb = async () =>
     },
   });
 
-// TODO: Add logic to a method that accepts some content and adds it to the database
 export const putDb = async (content) => {
   const editDB = await openDB('edit', 1)
   const tx = editDB.transaction('edit', 'readwrite')
@@ -22,7 +21,6 @@ export const putDb = async (content) => {
   console.error('putDb not implemented', result);
 }
 
-// TODO: Add logic for a method that gets all the content from the database
 export const getDb = async () => {
   const editDB = await openDB('edit', 1)
   const tx = editDB.transaction('edit', 'readonly');
