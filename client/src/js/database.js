@@ -13,18 +13,18 @@ const initdb = async () =>
   });
 
 export const putDb = async (content) => {
-  const editDB = await openDB('edit', 1)
-  const tx = editDB.transaction('edit', 'readwrite')
-  const store = tx.objectStore('edit')
+  const editDB = await openDB('jate', 1)
+  const tx = editDB.transaction('jate', 'readwrite')
+  const store = tx.objectStore('jate')
   const request = store.put({ id: 1, value: content })
   const result = await request
   console.error('putDb not implemented', result);
 }
 
 export const getDb = async () => {
-  const editDB = await openDB('edit', 1)
-  const tx = editDB.transaction('edit', 'readonly');
-  const store = tx.objectStore('edit');
+  const editDB = await openDB('jate', 1)
+  const tx = editDB.transaction('jate', 'readonly');
+  const store = tx.objectStore('jate');
   const request = store.get(1);
   const result = await request;
   console.log('result.value', result);
