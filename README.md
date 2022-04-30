@@ -36,5 +36,6 @@
 
   ## Questions
 
-  [My Github Profile]()
-  [Github Repo Link]()
+  [My Github Profile](https://github.com/BPpearsall)
+
+  [Github Repo Link](https://github.com/BPpearsall/note-text-editor)
